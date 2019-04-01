@@ -1,0 +1,42 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.theGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 80px);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+
+  @media screen and (max-width: 768px){
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 80px);
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+  }
+
+  div {
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div:nth-child(3) {
+    grid-area: card;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  div:nth-child(n+13) {
+    background-color: lime;
+  }
+
+  :global{
+    .header{
+      background-color: yellow;
+    }
+  }
+
+}

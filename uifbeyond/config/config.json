@@ -9,12 +9,21 @@
           "manifest": "./src/webparts/theFlexBox/TheFlexBoxWebPart.manifest.json"
         }
       ]
+    },
+    "the-grid-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/theGrid/TheGridWebPart.js",
+          "manifest": "./src/webparts/theGrid/TheGridWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "TheFlexBoxWebPartStrings": "lib/webparts/theFlexBox/loc/{locale}.js",
     "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
-    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "TheGridWebPartStrings": "lib/webparts/theGrid/loc/{locale}.js"
   }
 }

@@ -16,7 +16,7 @@
   "@microsoft/generator-sharepoint": {
     "environment": "spo",
     "framework": "react",
-    "isCreatingSolution": true,
+    "isCreatingSolution": false,
     "version": "1.8.0",
     "libraryName": "uifbeyond",
     "libraryId": "099842e1-03e5-4e39-98f2-5f26d75ab320",
