@@ -26,7 +26,8 @@
     "@types/react-dom": "16.0.5",
     "@types/webpack-env": "1.13.1",
     "react": "16.7.0",
-    "react-dom": "16.7.0"
+    "react-dom": "16.7.0",
+    "susy": "^3.0.5"
   },
   "resolutions": {
     "@types/react": "16.4.2"

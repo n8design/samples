@@ -15,8 +15,9 @@
   align-items: center;
   align-content: stretch;
   justify-content: space-evenly;
+  flex-direction: row;
 
-  transition: all 0.3s ease-in-out;
+  // transition: all 0.3s ease-in-out;
 
   :global {
 
@@ -24,8 +25,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 10vh;
-      height: 10vh;
+      width: 15vw;
+      height: 15vw;
       margin: 2vh;
       background-color: lime;
       align-content: center;
