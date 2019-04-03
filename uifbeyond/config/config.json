@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "the-flex-box-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/theFlexBox/TheFlexBoxWebPart.js",
+          "manifest": "./src/webparts/theFlexBox/TheFlexBoxWebPart.manifest.json"
+        }
+      ]
+    },
+    "the-grid-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/theGrid/TheGridWebPart.js",
+          "manifest": "./src/webparts/theGrid/TheGridWebPart.manifest.json"
+        }
+      ]
+    },
+    "default-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/defaultWebPart/DefaultWebPartWebPart.js",
+          "manifest": "./src/webparts/defaultWebPart/DefaultWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "grid-adoption-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/gridAdoption/GridAdoptionWebPart.js",
+          "manifest": "./src/webparts/gridAdoption/GridAdoptionWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TheFlexBoxWebPartStrings": "lib/webparts/theFlexBox/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "TheGridWebPartStrings": "lib/webparts/theGrid/loc/{locale}.js",
+    "DefaultWebPartWebPartStrings": "lib/webparts/defaultWebPart/loc/{locale}.js",
+    "GridAdoptionWebPartStrings": "lib/webparts/gridAdoption/loc/{locale}.js"
+  }
+}
