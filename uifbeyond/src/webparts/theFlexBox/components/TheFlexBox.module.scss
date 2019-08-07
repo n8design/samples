@@ -1,0 +1,42 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+:global {
+
+  .ms-Overlay,
+  .ms-Dialog-main {
+    display: none !important;
+  }
+}
+
+.theFlexBox {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  // transition: all 0.3s ease-in-out;
+
+  :global {
+
+    .item-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 15vw;
+      height: 15vw;
+      margin: 2vh;
+      background-color: lime;
+      align-content: center;
+    }
+
+    .item-text {
+      font-size: 5vh;
+      font-weight: $ms-font-weight-semibold;
+    }
+
+  }
+
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "uifbeyond-client-side-solution",
+    "id": "099842e1-03e5-4e39-98f2-5f26d75ab320",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/uifbeyond.sppkg"
+  }
+}

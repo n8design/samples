@@ -1,0 +1,101 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+$backgroundColor: linear-gradient(45deg, red, yellow);
+
+.theGrid {
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+
+  div {
+    background: lime;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 80px);
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+  }
+
+  @media screen and (max-width: 320px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 80px);
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+  }
+
+    div:nth-child(3) {
+      grid-area: card;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      background-color: yellow;
+  }
+
+  div {
+    background: $backgroundColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      animation: rotate 0.5s linear 0.5s infinite alternate;
+    }
+  }
+}
+
+
+
+//   div:nth-child(n+13) {
+//     background-color: lime;
+//   }
+
+//   :global {
+//     .header {
+//       display: flex;
+//       background-color: yellow;
+//       width: 4fr;
+//       align-self: stretch;
+//       flex: 1 1;
+//     }
+//   }
+
+// }
+
+// @keyframes rotatebg {
+//   from {
+//     background-color: $backgroundColor;
+//   }
+
+//   to {
+//     background: linear-gradient(225deg, red, yellow);
+//   }
+// }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: scale(2);
+  }
+}

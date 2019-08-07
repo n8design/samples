@@ -1,0 +1,27 @@
+{
+  "@pnp/generator-spfx": {
+    "framework": "react",
+    "pnpFramework": "reactjs.plus",
+    "pnp-libraries": [
+      "@pnp/spfx-property-controls",
+      "@pnp/spfx-controls-react"
+    ],
+    "pnp-ci": [],
+    "pnp-vetting": [
+      "webpack-analyzer",
+      "stylelint"
+    ],
+    "spfxenv": "spo"
+  },
+  "@microsoft/generator-sharepoint": {
+    "environment": "spo",
+    "framework": "react",
+    "isCreatingSolution": false,
+    "version": "1.8.0",
+    "libraryName": "uifbeyond",
+    "libraryId": "099842e1-03e5-4e39-98f2-5f26d75ab320",
+    "packageManager": "npm",
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
